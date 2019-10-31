@@ -1,5 +1,30 @@
 {
   "contracts": {
+    "ds-auth_f783169": {
+      "deps": {
+        "ds-test": "ds-test_a4e4005"
+      },
+      "name": "ds-auth",
+      "repo": {
+        "name": "ds-auth-f783169",
+        "ref": "HEAD",
+        "rev": "f783169408c278f85e26d77ba7b45823ed9503dd",
+        "url": "https://github.com/dapphub/ds-auth"
+      }
+    },
+    "ds-guard_4678e1c": {
+      "deps": {
+        "ds-auth": "ds-auth_f783169",
+        "ds-test": "ds-test_a4e4005"
+      },
+      "name": "ds-guard",
+      "repo": {
+        "name": "ds-guard-4678e1c",
+        "ref": "HEAD",
+        "rev": "4678e1c74fce1542f1379f11325d7bfbbb897344",
+        "url": "https://github.com/dapphub/ds-guard"
+      }
+    },
     "ds-test_a4e4005": {
       "deps": {},
       "name": "ds-test",
@@ -25,6 +50,7 @@
   },
   "this": {
     "deps": {
+      "ds-guard": "ds-guard_4678e1c",
       "multicall": "multicall_df1e59d"
     },
     "name": "multicall-flat"
