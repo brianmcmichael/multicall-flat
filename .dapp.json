@@ -1,0 +1,33 @@
+{
+  "contracts": {
+    "ds-test_a4e4005": {
+      "deps": {},
+      "name": "ds-test",
+      "repo": {
+        "name": "ds-test-a4e4005",
+        "ref": "HEAD",
+        "rev": "a4e40050b809705b15867939f5829540c50cb84f",
+        "url": "https://github.com/dapphub/ds-test"
+      }
+    },
+    "multicall_df1e59d": {
+      "deps": {
+        "ds-test": "ds-test_a4e4005"
+      },
+      "name": "multicall",
+      "repo": {
+        "name": "multicall-df1e59d",
+        "ref": "HEAD",
+        "rev": "df1e59d39bc525d573ec351dbf23afe77c903a73",
+        "url": "https://github.com/makerdao/multicall"
+      }
+    }
+  },
+  "this": {
+    "deps": {
+      "multicall": "multicall_df1e59d"
+    },
+    "name": "multicall-flat"
+  },
+  "version": 1
+}
