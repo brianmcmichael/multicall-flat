@@ -2,7 +2,7 @@
 , dappPkgsSrc ? fetchGit {
     url = "https://github.com/icetan/dapptools";
     ref = "nix-solpkg-flatten";
-    rev = "f8d7460249ebfea35632ca3848716574e94dfb5f";
+    rev = "910b560957e316c392b661f1970fba26881e1176";
   }
 }:
 
